@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Indie Flower', cursive;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(img/fondo.jpg);
+    background-position: center bottom;
+    background-size: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.menu{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: blueviolet;
+}
+
+.menu .navbar ul li a.current {
+    color: blueviolet;
+}
+
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+
+}
+
+
+.header-content{
+    text-align: center;
+}
+
+.header-content h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: blueviolet;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p{
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #bddb45;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.btn-1:hover{
+    background-color: #b7df18;
+}
+
+.menu{
+    padding: 30px;
+}
+
+.menu label{
+    display:initial;
+}
+
+.menu .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.menu .navbar ul li{
+    width: 100%; 
+}
+
+#menu:checked ~ .navbar {
+    display: initial
+}
